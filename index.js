@@ -1,12 +1,9 @@
-//Users/govardhann/Documents/aync/uploads
-
 const fs = require('fs');
 const util = require('util');
 const writeFile = util.promisify(fs.writeFile);
 const axios = require('axios');
 const { call, error } = require('./utils/promise');
 
-// const path = `Users/govardhann/Documents/aync/uploads/${Math.random()}.txt`;
 const path = `./uploads/file-${Math.random()}.txt`;
 const url = `https://ironhack-pokeapi.herokuapp.com/pokemon/2`;
 
